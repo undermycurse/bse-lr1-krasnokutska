@@ -27,3 +27,9 @@ remove_dish("кава капучіно")
 
 show_menu()
 
+def generate_qr_link(menu_name):
+    return f"https://menuqr.example.com/{menu_name}"
+
+
+qr_link = generate_qr_link("brewspace")
+print("Посилання для QR-коду:", qr_link)
